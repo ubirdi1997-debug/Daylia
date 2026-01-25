@@ -66,10 +66,9 @@ class _AddEditRoutineScreenState extends State<AddEditRoutineScreen> {
     if (!_formKey.currentState!.validate()) return;
 
     final trimmedName = _nameController.text.trim();
-    final orderedTasks = List<Task>.from(_tasks)
-      ..asMap().forEach((index, task) {
-        orderedTasks[index] = task.copyWith(order: index);
-      });
+    final orderedTasks = _tasks.asMap().entries.map((entry) {
+      return entry.value.copyWith(order: entry.key);
+    }).toList();
 
     final provider = context.read<RoutineProvider>();
 
