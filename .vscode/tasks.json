@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Step 1: Flutter Clean",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["clean"],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Step 2: Build Release APK",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["build", "apk", "--release"],
+            "problemMatcher": ["$flutter"],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Step 3: Build App Bundle",
+            "type": "shell",
+            "command": "flutter",
+            "args": ["build", "appbundle", "--release"],
+            "problemMatcher": ["$flutter"],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Build All (Clean + APK + Bundle)",
+            "type": "shell",
+            "command": "bash",
+            "args": ["-c", "flutter clean && flutter build apk --release && flutter build appbundle --release"],
+            "problemMatcher": ["$flutter"],
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}

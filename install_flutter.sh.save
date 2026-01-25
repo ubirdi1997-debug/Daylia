@@ -1,0 +1,68 @@
+#!/bin/bash
+set -e echo 
+"==============================" 
+echo "🚀 Flutter + 
+Android Setup" echo "For 
+GitHub Codespaces / CI" 
+echo 
+"=============================="
+# -------- CONFIG 
+# --------
+FLUTTER_VERSION="stable" 
+ANDROID_SDK_ROOT="$HOME/android-sdk" 
+JAVA_VERSION="17"
+# -------- SYSTEM 
+# --------
+echo "🔹 Updating 
+system..." sudo apt 
+update -y echo "🔹 
+Installing system 
+dependencies..." sudo apt 
+install -y \
+  curl \ git \ unzip \ 
+  zip \ xz-utils \ 
+  libglu1-mesa \ 
+  ca-certificates \ wget 
+  \ 
+  openjdk-${JAVA_VERSION}-jdk
+# -------- JAVA --------
+echo "🔹 Configuring 
+Java..." export 
+JAVA_HOME="/usr/lib/jvm/java-${JAVA_VERSION}-openjdk-amd64" 
+echo "export 
+JAVA_HOME=$JAVA_HOME" >> 
+~/.bashrc echo 'export 
+PATH=$JAVA_HOME/bin:$PATH' 
+>> ~/.bashrc
+# -------- FLUTTER 
+# --------
+echo "🔹 Installing 
+Flutter..." cd $HOME if [ 
+! -d "$HOME/flutter" ]; 
+then git clone 
+  https://github.com/flutter/flutter.git 
+  -b $FLUTTER_VERSION
+fi echo 'export 
+PATH="$PATH:$HOME/flutter/bin"' 
+>> ~/.bashrc
+export 
+PATH="$PATH:$HOME/flutter/bin"
+# -------- ANDROID SDK 
+# --------
+echo "🔹 Installing 
+Android SDK..." mkdir -p 
+$ANDROID_SDK_ROOT/cmdline-tools 
+cd $ANDROID_SDK_ROOT if [ 
+! -d 
+"cmdline-tools/latest" ]; 
+then
+  wget 
+  https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip 
+  -O cmdline-tools.zip 
+  unzip cmdline-tools.zip 
+  mv cmdline-tools 
+  cmdline-tools/latest rm 
+  cmdline-tools.zip
+fi export 
+ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT
+export ANDROID
