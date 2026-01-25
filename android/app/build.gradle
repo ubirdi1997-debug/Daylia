@@ -31,7 +31,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.checkly.lists"
+    namespace "com.daylia.app"
     compileSdk 36
     ndkVersion flutter.ndkVersion
 
@@ -49,7 +49,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.checkly.lists"
+        applicationId "com.daylia.app"
         minSdkVersion flutter.minSdkVersion
         targetSdk 36
         versionCode 1

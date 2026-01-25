@@ -56,9 +56,9 @@ class NotificationService {
     final tzScheduledTime = tz.TZDateTime.from(scheduledTime, tz.local);
 
     const androidDetails = AndroidNotificationDetails(
-      'checkly_reminders',
-      'Checkly Lists Reminders',
-      channelDescription: 'Notifications for checklist item reminders',
+      'daylia_reminders',
+      'Daylia Reminders',
+      channelDescription: 'Notifications for routine and task reminders',
       importance: Importance.high,
       priority: Priority.high,
       showWhen: true,

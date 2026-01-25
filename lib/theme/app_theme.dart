@@ -9,7 +9,6 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.lightBackground,
       fontFamily: 'Poppins',
       colorScheme: ColorScheme.light(
-        background: AppColors.lightBackground,
         surface: AppColors.lightSurface,
         primary: AppColors.lightPrimary,
         onPrimary: Colors.white,
@@ -20,18 +19,18 @@ class AppTheme {
         outline: AppColors.lightTextSecondary.withOpacity(0.2),
         outlineVariant: AppColors.lightTextSecondary.withOpacity(0.1),
       ),
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         elevation: 0,
         backgroundColor: AppColors.lightBackground,
         foregroundColor: AppColors.lightTextPrimary,
         centerTitle: false,
-        titleTextStyle: const TextStyle(
+        titleTextStyle: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.w700,
           color: AppColors.lightTextPrimary,
           fontFamily: 'Poppins',
         ),
-        iconTheme: const IconThemeData(color: AppColors.lightTextPrimary),
+        iconTheme: IconThemeData(color: AppColors.lightTextPrimary),
       ),
       cardTheme: CardTheme(
         color: AppColors.lightSurface,
@@ -200,8 +199,8 @@ class AppTheme {
       checkboxTheme: CheckboxThemeData(
         side: const BorderSide(color: AppColors.lightPrimary, width: 2),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        fillColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
+        fillColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
             return AppColors.lightPrimary;
           }
           return Colors.transparent;
@@ -222,7 +221,6 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.darkBackground,
       fontFamily: 'Poppins',
       colorScheme: ColorScheme.dark(
-        background: AppColors.darkBackground,
         surface: AppColors.darkSurface,
         primary: AppColors.darkPrimary,
         onPrimary: AppColors.darkBackground,
@@ -233,18 +231,18 @@ class AppTheme {
         outline: AppColors.darkTextSecondary.withOpacity(0.2),
         outlineVariant: AppColors.darkTextSecondary.withOpacity(0.1),
       ),
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         elevation: 0,
         backgroundColor: AppColors.darkBackground,
         foregroundColor: AppColors.darkTextPrimary,
         centerTitle: false,
-        titleTextStyle: const TextStyle(
+        titleTextStyle: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.w700,
           color: AppColors.darkTextPrimary,
           fontFamily: 'Poppins',
         ),
-        iconTheme: const IconThemeData(color: AppColors.darkTextPrimary),
+        iconTheme: IconThemeData(color: AppColors.darkTextPrimary),
       ),
       cardTheme: CardTheme(
         color: AppColors.darkSurface,
@@ -413,8 +411,8 @@ class AppTheme {
       checkboxTheme: CheckboxThemeData(
         side: const BorderSide(color: AppColors.darkPrimary, width: 2),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-        fillColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.selected)) {
+        fillColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
             return AppColors.darkPrimary;
           }
           return Colors.transparent;

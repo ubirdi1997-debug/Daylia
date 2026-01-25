@@ -1,4 +1,4 @@
-name: daylia
+name: Daylia
 description: "Daylia - A beautifully designed daily routine and checklist app that helps you build habits, stay consistent, and track progress."
 publish_to: 'none'
 version: 1.0.0+1
@@ -34,12 +34,14 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   build_runner: ^2.4.7
   hive_generator: ^2.0.1
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
   
   assets:
     - assets/images/
+    - assets/privacy_policy.html
   
   fonts:
     - family: Poppins
@@ -51,4 +53,11 @@ flutter:
           weight: 600
         - asset: assets/fonts/Poppins-Bold.ttf
           weight: 700
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#5B6CFF"
+  adaptive_icon_foreground: "assets/icon.png"
 

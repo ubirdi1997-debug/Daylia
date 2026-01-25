@@ -205,7 +205,7 @@ class _HomePageState extends ConsumerState<HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Checkly Lists'),
+        title: const Text('Daylia'),
         actions: [
           IconButton(
             icon: const Icon(Icons.sort),

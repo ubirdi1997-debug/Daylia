@@ -80,19 +80,19 @@ class _TaskTileState extends State<TaskTile>
           title: Text(
             widget.task.title,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              decoration: widget.task.isCompleted
-                  ? TextDecoration.lineThrough
-                  : TextDecoration.none,
-              color: widget.task.isCompleted
-                  ? AppColors.lightTextSecondary
-                  : null,
-            ),
+                  decoration: widget.task.isCompleted
+                      ? TextDecoration.lineThrough
+                      : TextDecoration.none,
+                  color: widget.task.isCompleted
+                      ? AppColors.lightTextSecondary
+                      : null,
+                ),
           ),
           trailing: PopupMenuButton(
             itemBuilder: (context) => [
               PopupMenuItem(
-                child: const Text('Delete'),
                 onTap: widget.onDelete,
+                child: const Text('Delete'),
               ),
             ],
           ),

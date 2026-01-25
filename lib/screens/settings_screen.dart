@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
 import '../theme/app_colors.dart';
@@ -18,9 +19,8 @@ class SettingsScreen extends StatelessWidget {
             floating: true,
             snap: true,
             elevation: 0,
-            backgroundColor: isDark
-                ? AppColors.darkBackground
-                : AppColors.lightBackground,
+            backgroundColor:
+                isDark ? AppColors.darkBackground : AppColors.lightBackground,
             title: const Text('Settings'),
           ),
           // Theme Section
@@ -101,7 +101,12 @@ class SettingsScreen extends StatelessWidget {
                       title: const Text('Privacy Policy'),
                       trailing: const Icon(Icons.arrow_forward_ios, size: 16),
                       onTap: () {
-                        // Handle navigation to privacy policy
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => _PrivacyPolicyScreen(),
+                          ),
+                        );
                       },
                     ),
                   ),
@@ -133,13 +138,49 @@ class SettingsScreen extends StatelessWidget {
         Text(
           value,
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            fontWeight: FontWeight.w600,
-            color: Theme.of(context).brightness == Brightness.dark
-                ? AppColors.darkPrimary
-                : AppColors.lightPrimary,
-          ),
+                fontWeight: FontWeight.w600,
+                color: Theme.of(context).brightness == Brightness.dark
+                    ? AppColors.darkPrimary
+                    : AppColors.lightPrimary,
+              ),
         ),
       ],
+    );
+  }
+}
+
+class _PrivacyPolicyScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Privacy Policy'),
+      ),
+      body: FutureBuilder<String>(
+        future: rootBundle.loadString('assets/privacy_policy.html'),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return SingleChildScrollView(
+              padding: const EdgeInsets.all(16),
+              child: _buildHtmlContent(context, snapshot.data!),
+            );
+          }
+          return const Center(child: CircularProgressIndicator());
+        },
+      ),
+    );
+  }
+
+  Widget _buildHtmlContent(BuildContext context, String html) {
+    // Extract text content from HTML for basic display
+    final textContent = html
+        .replaceAll(RegExp(r'<[^>]*>'), '\n')
+        .replaceAll(RegExp(r'\n+'), '\n')
+        .trim();
+
+    return Text(
+      textContent,
+      style: Theme.of(context).textTheme.bodyMedium,
     );
   }
 }

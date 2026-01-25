@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/routine_provider.dart';
-import '../models/routine.dart';
 import '../models/task.dart';
 import '../theme/app_colors.dart';
 import '../widgets/animated_progress_circle.dart';

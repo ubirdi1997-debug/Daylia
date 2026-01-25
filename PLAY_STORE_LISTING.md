@@ -1,150 +1,396 @@
-# Google Play Store Listing Information
-
-## App Name
-**Checkly Lists**
-
-## Short Description (80 characters max)
-Offline checklist app for daily routines, tasks, and reusable lists.
-
-## Full Description
-
-**Checkly Lists - Your Simple Offline Checklist Companion**
-
-Checkly Lists is a clean, minimal checklist app designed for clarity, simplicity, and reliability. Perfect for daily routines, task management, and organizing your life—all without the internet.
-
-**Key Features:**
-
-✅ **Fully Offline** - Works completely without internet. No accounts, no sign-in required. Your data stays on your device.
-
-✅ **Reusable Checklists** - Create checklists once and reset them with one tap. Perfect for daily routines, weekly tasks, and repeatable workflows.
-
-✅ **Intuitive Organization** - Pin important checklists, search by name, and sort by your preference for easy access.
-
-✅ **Easy Management** - Drag to reorder items, swipe to delete, and undo actions when needed.
-
-✅ **Clean Design** - Beautiful Material Design interface with light and dark mode support. No clutter, no distractions.
-
-✅ **Privacy First** - No ads, no tracking, no data collection, no analytics. Everything stays on your device.
-
-✅ **Minimal Permissions** - The app only requests permission for notifications. It's completely self-contained and secure.
-
-**Perfect For:**
-- Daily morning and evening routines
-- Weekly task lists and planning
-- Shopping lists and groceries
-- Travel packing checklists
-- Workout and fitness routines
-- Project task management
-- Habit tracking
-- Any repeatable checklist you need
-
-**Why Checkly Lists?**
-In a world of complex apps with unnecessary features, Checkly Lists focuses on what matters: helping you stay organized with simple, reliable checklists. No internet needed, no accounts to manage, just you and your tasks.
-
-Download Checkly Lists today and experience the simplicity of focused productivity.
+# Daylia - Daily Routine & Habit Tracker
+## Google Play Store Listing
 
 ---
 
-**Privacy & Permissions:**
-- ✅ No internet required
-- ✅ Minimal permissions (notifications only)
-- ✅ No data collection or tracking
-- ✅ No ads or analytics
-- ✅ All data stored locally on your device
-- ✅ GDPR and CCPA compliant
-
-**Support:**
-For questions or support, contact: masteyesseeds@gmail.com
-
-**Developed by:** MAST EYES SEEDS PRIVATE LIMITED
+## 📱 App Title
+**Daylia - Daily Routines & Habits**
 
 ---
 
-## Category
-**Tools / Productivity**
+## 🎯 Short Description (80 characters max)
+Build better habits with beautiful daily routines. Offline, private, no ads.
 
-## Tags/Keywords (for ASO)
-- checklist
-- todo
-- tasks
-- productivity
-- offline
-- routines
-- organization
-- simple
-- minimal
-- daily tasks
-- task manager
-- to-do list
-- reminder
-- checklist app
-- offline app
+---
 
-## Content Rating
-**Everyone** - The app contains no objectionable content and is suitable for all ages. It does not include violence, mature themes, or inappropriate language.
+## 📝 Full Description (4000 characters max)
 
-## Screenshots Requirements
+**Transform Your Daily Life with Daylia**
 
-You'll need to create screenshots for the following:
+Daylia is a beautifully designed routine and habit tracking app that helps you build consistency, stay focused, and achieve your goals—one day at a time.
 
-1. **Phone Screenshots (Required - minimum 2, recommended 4-5):**
-   - Home screen showing grid of checklists
-   - Checklist detail view with completed and uncompleted items
-   - Dark mode view of home screen
-   - Settings or preferences screen (optional)
+🎨 **BEAUTIFUL & MODERN DESIGN**
+• Clean, minimal interface with smooth animations
+• Gorgeous Material 3 design
+• Premium light and dark themes
+• Calming color palette designed for focus
+• Spacious layouts that reduce clutter
 
-2. **Tablet Screenshots (Optional but recommended for better visibility):**
-   - Same as phone but showing tablet layout
+✨ **POWERFUL FEATURES**
+• Create unlimited daily routines
+• Build custom task checklists
+• Track completion with visual progress circles
+• Maintain streaks to stay motivated
+• Drag-and-drop task reordering
+• Smooth animations and micro-interactions
+• Real-time statistics and insights
 
-3. **Feature Graphic (1024 x 500 pixels):**
-   - "Checkly Lists" with tagline
-   - "Simple Offline Checklists" or "Organize Your Tasks Offline"
+🔥 **STREAK TRACKING**
+• See your current streak for each routine
+• Track your best streak ever
+• Visual fire badges for motivation
+• Never lose momentum with daily reminders
 
-4. **Icon:**
-   - Already configured from `assets/icon.png` (1024x1024)
+📊 **INSIGHTFUL STATISTICS**
+• Weekly completion percentage
+• Total tasks completed
+• Routine-specific breakdowns
+• Track your progress over time
+• Beautiful stat cards
 
-## Play Store Requirements Checklist
+🔒 **PRIVACY FIRST**
+• 100% offline - no internet required
+• All data stored locally on your device
+• No accounts, no sign-ups
+• No tracking or analytics
+• No ads, ever
+• Your data is yours alone
 
-- [x] App name compliant with Play Store policies
-- [x] Description is clear, accurate, and promotional
-- [x] Privacy policy link will be provided
-- [x] Content rating questionnaire completed
-- [x] No restricted content
-- [x] App icon follows guidelines
-- [x] Version number set (1.0.0)
-- [x] Target SDK 34 (compliant with Play Store requirements)
+⚡ **PERFECT FOR:**
+• Morning routines
+• Evening wind-down rituals
+• Fitness habits
+• Self-care practices
+• Work productivity
+• Study schedules
+• Wellness tracking
+• Any repeating daily tasks
 
-- Will be automatically generated for all densities
+🎯 **SIMPLE & FOCUSED**
+Unlike complex productivity apps, Daylia keeps things simple:
+• No overwhelming features
+• No complicated settings
+• Just your routines, clearly organized
+• Focus on what matters most
 
-## Promotional Text (400 characters max)
-Simple, offline-first checklist app perfect for daily routines and reusable task lists. No internet, no accounts, no ads—just clean, reliable checklists that work.
+💎 **PREMIUM EXPERIENCE**
+• Fast and responsive
+• No loading times (completely offline)
+• No subscription fees
+• No in-app purchases
+• No ads or tracking
+• Completely free forever
 
-## What's New (for updates)
-For initial release:
-"Initial release of Checkly - a simple, offline-first checklist app for daily routines and task management."
+🌟 **KEY BENEFITS**
+• Build lasting habits through consistency
+• Reduce decision fatigue with preset routines
+• Stay motivated with visual progress
+• Track multiple routines simultaneously
+• Customize for your unique lifestyle
 
-## Pricing
-**Free** - The app is free to download and use.
+📱 **HOW IT WORKS**
+1. Create a routine (Morning Reset, Workout, Bedtime, etc.)
+2. Add tasks to your routine
+3. Complete tasks daily and build streaks
+4. View your progress and stats
+5. Stay consistent and achieve your goals
 
-## Contact Information
-- **Email:** masteyesseeds my@gmail.com
-- **Website:** (Optional - not required)
-- **Privacy Policy URL:** (You'll need to host the privacy policy online and provide the URL)
+🎨 **DESIGN PHILOSOPHY**
+Daylia is designed to feel like a premium, featured app. Every detail has been carefully crafted:
+• Rounded cards with soft shadows
+• Smooth page transitions
+• Delightful animations
+• Spacious, breathable layouts
+• Clear typography
+• Intuitive navigation
 
-## Additional Notes for Play Store Submission
+🔐 **YOUR DATA IS SAFE**
+We take privacy seriously:
+• No data collection
+• No user accounts
+• No cloud storage
+• Everything stays on your device
+• Full GDPR compliance
 
-1. **Privacy Policy:** You must host the privacy policy online and provide a publicly accessible URL in the Play Console.
+---
 
-2. **App Bundle:** Consider building an App Bundle (.aab) instead of APK for better optimization:
-   ```bash
-   flutter build appbundle --release
-   ```
+## 🏷️ Category
+**Productivity**
 
-3. **Content Rating:** Complete the content rating questionnaire in Play Console.
+---
 
-4. **Store Listing:** Upload screenshots, feature graphic, and complete all required fields.
+## 🏷️ Tags/Keywords
+habits, routine, daily planner, habit tracker, productivity, morning routine, streak tracker, task list, offline, private, no ads, goal tracker, wellness, self-improvement, minimal, clean
 
-5. **Testing:** Set up internal testing track before public release.
+---
 
-6. **Pricing & Distribution:** Set as free app, select countries for distribution.
+## 📸 Screenshots (Required: 2-8 screenshots)
 
+### Screenshot 1: Home Screen
+**Title:** Your Daily Routines at a Glance
+**Description:** Beautiful cards showing all your routines with progress bars and streak indicators
+
+### Screenshot 2: Progress Circle
+**Title:** Track Your Daily Progress
+**Description:** Animated progress circle showing today's completion percentage
+
+### Screenshot 3: Routine Detail
+**Title:** Complete Your Tasks
+**Description:** Check off tasks with smooth animations and watch your streak grow
+
+### Screenshot 4: Statistics
+**Title:** Insights & Progress
+**Description:** View your completion rates, best streaks, and detailed routine breakdowns
+
+### Screenshot 5: Dark Mode
+**Title:** Beautiful Day or Night
+**Description:** Gorgeous dark mode designed for evening use
+
+### Screenshot 6: Add Routine
+**Title:** Create Custom Routines
+**Description:** Build your perfect routine with drag-and-drop task ordering
+
+### Screenshot 7: Streak Badge
+**Title:** Build Your Streak
+**Description:** Stay motivated with visual streak tracking and fire badges
+
+### Screenshot 8: Settings
+**Title:** Simple & Clean
+**Description:** Minimal settings with theme toggle and privacy information
+
+---
+
+## 🎬 Feature Graphic (1024 x 500)
+**Text Overlay:** "Build Better Habits, One Day at a Time"
+**Visual:** Gradient background (#5B6CFF to #22D3EE) with animated progress circle, checklist icons, and fire emoji for streaks
+
+---
+
+## 📱 App Icon
+Circular icon with gradient background featuring minimalist checklist or routine symbol
+
+---
+
+## 🎥 Promo Video (Optional but Recommended)
+**Length:** 30 seconds
+**Content:**
+- 0-5s: App logo reveal with tagline
+- 5-10s: Show home screen with routines
+- 10-15s: Demonstrate checking off tasks
+- 15-20s: Show streak tracking
+- 20-25s: Display statistics screen
+- 25-30s: End with "Daylia - Available Now"
+
+---
+
+## 👤 Developer Info
+
+**Developer Name:** VEDIC NIRMAN
+
+**Contact Email:** nirmanvedic@gmail.com
+
+**Phone:** +91 88373 59348
+
+**Website:** (Optional - add if available)
+
+**Privacy Policy:** 
+https://your-website.com/privacy-policy.html
+(Or include in-app HTML file)
+
+---
+
+## 🌍 Content Rating
+**Rating:** Everyone
+
+**Questionnaire Answers:**
+- Violence: No
+- Sexual Content: No
+- Language: No
+- Controlled Substances: No
+- User Interaction: No (offline app)
+- Shares User Data: No
+- Collects User Data: No
+
+---
+
+## 💰 Pricing
+**Type:** Free
+**In-app Purchases:** None
+**Ads:** None
+
+---
+
+## 🔄 What's New (Version 1.0.0)
+🎉 **Welcome to Daylia!**
+
+Initial release featuring:
+• Beautiful Material 3 design
+• Create unlimited daily routines
+• Track completion with progress circles
+• Build and maintain streaks
+• Comprehensive statistics
+• Gorgeous light and dark themes
+• 100% offline and private
+• Smooth animations throughout
+• Drag-and-drop task reordering
+• No ads, no tracking, completely free
+
+Start building better habits today! 🚀
+
+---
+
+## 📋 Additional Store Listing Details
+
+### App Permissions
+**Required:**
+- Storage: To save your routines locally on your device
+
+**Optional:**
+- Notifications: To send local reminders for your routines
+
+### Supported Devices
+- Android 5.0 (API 21) and above
+- Phones and tablets
+- All screen sizes
+
+### Languages
+- English (primary)
+- (Add more as translated)
+
+### Target Audience
+- Adults (18+)
+- Young adults (16-17)
+- Suitable for all ages
+
+---
+
+## 🎯 Marketing Strategy
+
+### App Store Optimization (ASO)
+**Primary Keywords:**
+- habit tracker
+- daily routine
+- routine planner
+- habit builder
+- streak tracker
+
+**Secondary Keywords:**
+- morning routine
+- productivity app
+- task tracker
+- offline planner
+- private habit tracker
+
+### Social Media Posts
+**Twitter/X:**
+"✨ Introducing Daylia - The beautiful habit tracker that respects your privacy. Build daily routines, track streaks, and achieve your goals. 100% offline, no ads, completely free. 🔥 #Daylia #HabitTracker #Productivity"
+
+**Instagram:**
+Beautiful screenshots with overlay text highlighting key features, streak animations, and progress circles
+
+### Review Requests
+Prompt users after:
+- 7 days of consistent use
+- Completing 3 routines
+- Reaching a 7-day streak
+
+---
+
+## 📝 Release Checklist
+
+- [x] App builds successfully
+- [x] Tested on multiple devices
+- [x] Privacy policy created
+- [x] Screenshots prepared (8 required)
+- [x] Feature graphic designed
+- [x] App icon finalized
+- [ ] Signing key created
+- [ ] App bundle (.aab) generated
+- [ ] Store listing content written
+- [ ] Beta testing completed
+- [ ] All traces of old name removed
+- [ ] Package name updated to com.daylia.app
+- [ ] Privacy policy URL set
+
+---
+
+## 🚀 Launch Plan
+
+### Pre-Launch (Week -1)
+- Create social media accounts
+- Build landing page (optional)
+- Prepare marketing materials
+- Set up email for support
+
+### Launch Day
+- Submit to Google Play
+- Post on social media
+- Share with beta testers
+- Request reviews from early users
+
+### Post-Launch (Week 1-4)
+- Monitor reviews and ratings
+- Respond to user feedback
+- Fix critical bugs quickly
+- Plan feature updates
+- Build community
+
+---
+
+## 📞 Support
+
+**Email:** nirmanvedic@gmail.com  
+**Response Time:** Within 24-48 hours  
+**Support Hours:** Monday-Friday, 9 AM - 6 PM IST
+
+---
+
+## 🎉 Taglines & Slogans
+
+1. "Build Better Habits, One Day at a Time"
+2. "Your Daily Routine, Beautifully Organized"
+3. "Track Habits. Build Streaks. Stay Consistent."
+4. "Simple Routines. Powerful Results."
+5. "Private. Offline. Beautiful."
+6. "Focus on What Matters Most"
+7. "Daily Routines Made Beautiful"
+
+---
+
+## 🎨 Brand Colors
+
+**Primary:** #5B6CFF (Soft Indigo)  
+**Accent:** #22D3EE (Soft Cyan)  
+**Background Light:** #F5F7FB  
+**Background Dark:** #0B1220  
+**Text Primary Light:** #0F172A  
+**Text Primary Dark:** #F1F5F9
+
+---
+
+## ✅ Final Pre-Submission Checklist
+
+- [ ] App name: Daylia
+- [ ] Package name: com.daylia.app
+- [ ] All Checkly references removed
+- [ ] Privacy policy accessible
+- [ ] Contact information correct
+- [ ] Screenshots high quality
+- [ ] Feature graphic meets specs
+- [ ] App icon appropriate
+- [ ] Version code: 1
+- [ ] Version name: 1.0.0
+- [ ] Signing configuration set
+- [ ] Release build tested
+- [ ] No debug code
+- [ ] Proguard rules configured
+- [ ] All permissions justified
+- [ ] Content rating accurate
+
+---
+
+**Developer:** VEDIC NIRMAN  
+**App Name:** Daylia  
+**Package:** com.daylia.app  
+**Version:** 1.0.0  
+**Last Updated:** January 25, 2026
