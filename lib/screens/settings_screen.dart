@@ -110,16 +110,6 @@ class SettingsScreen extends StatelessWidget {
                       },
                     ),
                   ),
-                  const SizedBox(height: 12),
-                  Card(
-                    child: ListTile(
-                      title: const Text('Terms of Service'),
-                      trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                      onTap: () {
-                        // Handle navigation to terms of service
-                      },
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -157,30 +147,25 @@ class _PrivacyPolicyScreen extends StatelessWidget {
         title: const Text('Privacy Policy'),
       ),
       body: FutureBuilder<String>(
-        future: rootBundle.loadString('assets/privacy_policy.html'),
+        future: rootBundle.loadString('assets/privacy_policy.txt'),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return SingleChildScrollView(
               padding: const EdgeInsets.all(16),
-              child: _buildHtmlContent(context, snapshot.data!),
+              child: Text(
+                snapshot.data!,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      height: 1.6,
+                    ),
+              ),
             );
+          }
+          if (snapshot.hasError) {
+            return Center(child: Text('Error loading privacy policy'));
           }
           return const Center(child: CircularProgressIndicator());
         },
       ),
-    );
-  }
-
-  Widget _buildHtmlContent(BuildContext context, String html) {
-    // Extract text content from HTML for basic display
-    final textContent = html
-        .replaceAll(RegExp(r'<[^>]*>'), '\n')
-        .replaceAll(RegExp(r'\n+'), '\n')
-        .trim();
-
-    return Text(
-      textContent,
-      style: Theme.of(context).textTheme.bodyMedium,
     );
   }
 }

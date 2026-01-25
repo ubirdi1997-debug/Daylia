@@ -1,0 +1,96 @@
+PRIVACY POLICY
+Daylia - Daily Routine & Habit Tracker
+
+Last updated: January 25, 2026
+
+VEDIC NIRMAN ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information in the Daylia mobile application.
+
+1. INFORMATION COLLECTION AND USE
+
+Daylia is designed with privacy as a core principle. We believe your personal data should remain yours.
+
+Data We DO NOT Collect:
+• Personal identification information (name, email, phone number)
+• Location data
+• Usage analytics or tracking data
+• Device identifiers or advertising IDs
+• Any data that leaves your device
+
+Data Stored Locally on Your Device:
+All your data is stored exclusively on your device using local storage:
+• Routine names and descriptions
+• Task lists and completion status
+• Streak tracking data
+• App preferences and settings
+
+Important: We have no access to this data. It never leaves your device and is not transmitted to any servers.
+
+2. OFFLINE-FIRST DESIGN
+
+Daylia is a completely offline application. No internet connection is required or used for any functionality. Your data remains private and secure on your device at all times.
+
+3. NO THIRD-PARTY SERVICES
+
+Daylia does not integrate with any third-party services, including:
+• No analytics services (e.g., Google Analytics, Firebase Analytics)
+• No advertising networks
+• No crash reporting services
+• No social media integrations
+• No cloud backup services
+
+4. NO USER ACCOUNTS
+
+Daylia does not require user registration or login. There are no user accounts, authentication systems, or password requirements.
+
+5. DATA SECURITY
+
+Since all data is stored locally on your device:
+• Your device's security mechanisms protect your data
+• We recommend using device-level encryption and screen locks
+• Back up your device regularly to prevent data loss
+
+6. DATA DELETION
+
+You have complete control over your data:
+• Delete individual routines and tasks within the app
+• Clear all app data through your device settings
+• Uninstalling the app removes all associated data from your device
+
+7. CHILDREN'S PRIVACY
+
+Daylia does not collect any personal information from anyone, including children under 13. The app can be safely used by individuals of all ages.
+
+8. PERMISSIONS
+
+Daylia requests minimal permissions:
+• Storage: To save your routines and tasks locally on your device
+• Notifications (optional): To send local reminders if you choose to enable them
+
+All permissions are used exclusively for local functionality and do not transmit any data externally.
+
+9. CHANGES TO THIS PRIVACY POLICY
+
+We may update this Privacy Policy from time to time. Any changes will be reflected in the app and on our website. Continued use of the app after changes constitutes acceptance of the updated policy.
+
+10. YOUR RIGHTS
+
+Since we don't collect or store your personal data on our servers, traditional data rights (access, correction, deletion requests) are not applicable. You maintain full control of your data directly on your device.
+
+11. COMPLIANCE
+
+Our privacy-first approach ensures compliance with major privacy regulations including:
+• GDPR (General Data Protection Regulation)
+• CCPA (California Consumer Privacy Act)
+• COPPA (Children's Online Privacy Protection Act)
+
+CONTACT US
+
+If you have any questions or concerns about this Privacy Policy, please contact us:
+
+Company: VEDIC NIRMAN
+Email: nirmanvedic@gmail.com
+Phone: +91 88373 59348
+
+12. SUMMARY
+
+In short: Daylia is a privacy-focused app that keeps all your data on your device. We don't collect, transmit, or store any of your personal information. Your routines, tasks, and progress are yours alone.
