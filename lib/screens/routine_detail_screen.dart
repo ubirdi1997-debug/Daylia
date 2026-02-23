@@ -256,10 +256,11 @@ class _RoutineDetailScreenState extends State<RoutineDetailScreen> {
           ),
           ElevatedButton(
             onPressed: () {
-              if (_taskController.text.isNotEmpty) {
+              final text = _taskController.text.trim();
+              if (text.isNotEmpty) {
                 context.read<RoutineProvider>().addTaskToRoutine(
                       routineId,
-                      _taskController.text,
+                      text,
                     );
                 Navigator.pop(context);
               }

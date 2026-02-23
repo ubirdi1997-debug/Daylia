@@ -46,7 +46,7 @@ class _TaskTileState extends State<TaskTile>
 
   void _onCheckboxTap() {
     _animationController.forward().then((_) {
-      _animationController.reverse();
+      if (mounted) _animationController.reverse();
     });
     widget.onToggle();
   }

@@ -132,6 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         onDelete: () {
                           _showDeleteConfirmation(context, routine.name, () {
                             routineProvider.deleteRoutine(routine.id);
+                            if (!context.mounted) return;
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text('${routine.name} deleted'),
