@@ -136,7 +136,7 @@ class StatsScreen extends StatelessWidget {
                                       ),
                                       decoration: BoxDecoration(
                                         color: AppColors.warningLight
-                                            .withOpacity(0.2),
+                                            .withValues(alpha: 0.2),
                                         borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Row(

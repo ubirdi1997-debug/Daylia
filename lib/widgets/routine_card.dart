@@ -83,8 +83,8 @@ class RoutineCard extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     color: isDark
-                        ? AppColors.warningDark.withOpacity(0.2)
-                        : AppColors.warningLight.withOpacity(0.1),
+                        ? AppColors.warningDark.withValues(alpha: 0.2)
+                        : AppColors.warningLight.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Row(

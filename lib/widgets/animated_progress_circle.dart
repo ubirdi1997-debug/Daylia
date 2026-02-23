@@ -126,8 +126,8 @@ class ProgressCirclePainter extends CustomPainter {
     // Background circle
     final backgroundPaint = Paint()
       ..color = isDark
-          ? AppColors.darkBackground.withOpacity(0.5)
-          : AppColors.lightBackground.withOpacity(0.5)
+          ? AppColors.darkBackground.withValues(alpha: 0.5)
+          : AppColors.lightBackground.withValues(alpha: 0.5)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 8;
 
