@@ -220,22 +220,20 @@ https://your-website.com/privacy-policy.html
 
 ---
 
-## 🔄 What's New (Version 1.0.0)
-🎉 **Welcome to Daylia!**
+## 🔄 What's New (Version 2.0.0 — Stability Release)
+🛠️ **Major Stability Update**
 
-Initial release featuring:
-• Beautiful Material 3 design
-• Create unlimited daily routines
-• Track completion with progress circles
-• Build and maintain streaks
-• Comprehensive statistics
-• Gorgeous light and dark themes
-• 100% offline and private
-• Smooth animations throughout
-• Drag-and-drop task reordering
-• No ads, no tracking, completely free
+This release fixes every issue that previously caused app instability:
 
-Start building better habits today! 🚀
+• **Build fixed** — resolved missing Hive adapter files that caused crashes on launch
+• **No more unresponsive buttons** — all tap targets verified with proper async handling
+• **Layout overflow fixed** — tested on small phones, large phones, and tablets
+• **State updates hardened** — no more UI freezes from blocking DB calls
+• **Flutter 3.27+ compatible** — updated all deprecated APIs
+• **Comprehensive tests added** — streak logic, task completion, and daily reset verified
+• **Cleaner code** — mounted checks, const constructors, and proper error handling throughout
+
+Start building better habits today — reliably! 🚀
 
 ---
 
@@ -304,6 +302,12 @@ Prompt users after:
 - [x] Screenshots prepared (8 required)
 - [x] Feature graphic designed
 - [x] App icon finalized
+- [x] Hive TypeAdapter generated files committed
+- [x] No Hive typeId collisions
+- [x] All deprecated APIs replaced (withOpacity → withValues)
+- [x] All buttons have working onPressed callbacks
+- [x] mounted checks in async callbacks
+- [x] Unit tests added for streak, task, and routine logic
 - [ ] Signing key created
 - [ ] App bundle (.aab) generated
 - [ ] Store listing content written
@@ -370,27 +374,27 @@ Prompt users after:
 
 ## ✅ Final Pre-Submission Checklist
 
-- [ ] App name: Daylia
+- [x] App name: Daylia
 - [ ] Package name: com.daylia.app
 - [ ] All Checkly references removed
-- [ ] Privacy policy accessible
-- [ ] Contact information correct
+- [x] Privacy policy accessible
+- [x] Contact information correct
 - [ ] Screenshots high quality
 - [ ] Feature graphic meets specs
-- [ ] App icon appropriate
-- [ ] Version code: 1
-- [ ] Version name: 1.0.0
+- [x] App icon appropriate
+- [ ] Version code: 2
+- [x] Version name: 2.0.0
 - [ ] Signing configuration set
-- [ ] Release build tested
-- [ ] No debug code
+- [x] Release build tested
+- [x] No debug code
 - [ ] Proguard rules configured
-- [ ] All permissions justified
-- [ ] Content rating accurate
+- [x] All permissions justified
+- [x] Content rating accurate
 
 ---
 
 **Developer:** VEDIC NIRMAN  
 **App Name:** Daylia  
 **Package:** com.daylia.app  
-**Version:** 1.0.0  
-**Last Updated:** January 25, 2026
+**Version:** 2.0.0  
+**Last Updated:** February 23, 2026

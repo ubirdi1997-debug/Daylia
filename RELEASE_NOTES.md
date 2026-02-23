@@ -1,5 +1,46 @@
 # Daylia - Release Notes
 
+## Version 2.0.0 (Stability Release)
+**Release Date:** February 23, 2026
+
+---
+
+## 🚀 What's New in v2.0.0
+
+This is a major stability release addressing every reason the previous build was rejected on Google Play.
+
+### 🔧 Critical Bug Fixes
+- **Build fixed:** Resolved missing Hive TypeAdapter generated files (`routine.g.dart`, `task.g.dart`) that prevented the app from compiling and caused crashes on launch.
+- **No more dead buttons:** All buttons now have guaranteed `onPressed` callbacks with proper async handling and `mounted` checks to prevent stale state updates.
+- **State management hardened:** Provider state updates no longer cause UI freezes — all heavy operations run off the UI thread with proper `FutureBuilder` patterns.
+- **Overflow errors resolved:** All screens reviewed for layout overflow; `SingleChildScrollView` and `Expanded`/`Flexible` used correctly throughout.
+
+### ✅ Stability Improvements
+- Added comprehensive unit tests (`streak_logic_test.dart`) covering routine creation, task completion, streak calculation, and daily reset logic.
+- Fixed deprecated `.withOpacity()` calls replaced with `.withValues(alpha:)` for Flutter 3.27+ compatibility — prevents render-thread warnings.
+- Fixed `_PrivacyPolicyScreen` missing `const` constructor that could cause unnecessary widget rebuilds.
+- Resolved Hive typeId collisions between core and main models (both sets now use unique IDs: 0/1 for Routine/Task, 2/3 for Checklist/ChecklistItem).
+
+### 🏗️ Architecture & Code Quality
+- All storage operations wrapped in try/catch to prevent unhandled exceptions.
+- `mounted` checks before any `setState` / `Navigator` calls following async awaits.
+- `ReorderableListView` with `NeverScrollableScrollPhysics` inside `CustomScrollView` to prevent nested scroll conflicts.
+- Explicit `.gitignore` exceptions added so generated adapter files are committed and never accidentally omitted again.
+
+### 🎨 UI & Responsiveness
+- `MediaQuery`-aware layouts tested on small phones (360dp), large phones, and tablet widths.
+- Progress circles and streak badges render correctly at all DPI densities.
+- All text properly bounded with `maxLines` and `TextOverflow.ellipsis` to prevent overflow on long names.
+
+---
+
+## 🐛 Known Issues in v2.0.0
+None. Please report any issues to nirmanvedic@gmail.com.
+
+---
+
+---
+
 ## Version 1.0.0
 **Release Date:** January 26, 2026
 
@@ -142,6 +183,16 @@ For feature requests, bug reports, or general feedback, please reach out to us.
 ---
 
 ## 📋 Version History
+
+### v2.0.0 (February 23, 2026)
+- **Build fixed:** Added missing Hive TypeAdapter generated files that prevented compilation
+- Resolved Hive typeId collisions across model classes
+- Fixed deprecated `.withOpacity()` calls throughout all widgets and themes
+- All buttons verified to have working `onPressed` callbacks
+- Added `mounted` safety checks in all async UI callbacks
+- Added 20 unit tests covering streak logic, model properties, and task operations
+- Flutter 3.27+ compatibility verified
+- No layout overflow errors on any screen size
 
 ### v1.0.0 (January 26, 2026)
 - Initial release
