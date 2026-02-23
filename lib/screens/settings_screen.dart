@@ -104,7 +104,7 @@ class SettingsScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => _PrivacyPolicyScreen(),
+                            builder: (_) => const _PrivacyPolicyScreen(),
                           ),
                         );
                       },
@@ -140,6 +140,8 @@ class SettingsScreen extends StatelessWidget {
 }
 
 class _PrivacyPolicyScreen extends StatelessWidget {
+  const _PrivacyPolicyScreen();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -161,7 +163,7 @@ class _PrivacyPolicyScreen extends StatelessWidget {
             );
           }
           if (snapshot.hasError) {
-            return Center(child: Text('Error loading privacy policy'));
+            return const Center(child: Text('Error loading privacy policy'));
           }
           return const Center(child: CircularProgressIndicator());
         },

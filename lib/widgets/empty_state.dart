@@ -38,7 +38,7 @@ class EmptyState extends StatelessWidget {
                         (isDark
                                 ? AppColors.darkPrimary
                                 : AppColors.lightPrimary)
-                            .withOpacity(0.1),
+                            .withValues(alpha: 0.1),
                     blurRadius: 16,
                     offset: const Offset(0, 4),
                   ),

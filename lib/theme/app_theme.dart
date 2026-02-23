@@ -16,8 +16,8 @@ class AppTheme {
         onSecondary: Colors.white,
         tertiary: AppColors.lightTextSecondary,
         error: AppColors.errorLight,
-        outline: AppColors.lightTextSecondary.withOpacity(0.2),
-        outlineVariant: AppColors.lightTextSecondary.withOpacity(0.1),
+        outline: AppColors.lightTextSecondary.withValues(alpha: 0.2),
+        outlineVariant: AppColors.lightTextSecondary.withValues(alpha: 0.1),
       ),
       appBarTheme: const AppBarTheme(
         elevation: 0,
@@ -37,7 +37,7 @@ class AppTheme {
         elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         margin: EdgeInsets.zero,
-        surfaceTintColor: AppColors.lightPrimary.withOpacity(0.05),
+        surfaceTintColor: AppColors.lightPrimary.withValues(alpha: 0.05),
       ),
       floatingActionButtonTheme: FloatingActionButtonThemeData(
         backgroundColor: AppColors.lightPrimary,
@@ -175,7 +175,7 @@ class AppTheme {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(
-            color: AppColors.lightTextSecondary.withOpacity(0.3),
+            color: AppColors.lightTextSecondary.withValues(alpha: 0.3),
             width: 1.5,
           ),
         ),
@@ -228,8 +228,8 @@ class AppTheme {
         onSecondary: AppColors.darkBackground,
         tertiary: AppColors.darkTextSecondary,
         error: AppColors.errorDark,
-        outline: AppColors.darkTextSecondary.withOpacity(0.2),
-        outlineVariant: AppColors.darkTextSecondary.withOpacity(0.1),
+        outline: AppColors.darkTextSecondary.withValues(alpha: 0.2),
+        outlineVariant: AppColors.darkTextSecondary.withValues(alpha: 0.1),
       ),
       appBarTheme: const AppBarTheme(
         elevation: 0,
@@ -249,7 +249,7 @@ class AppTheme {
         elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         margin: EdgeInsets.zero,
-        surfaceTintColor: AppColors.darkPrimary.withOpacity(0.1),
+        surfaceTintColor: AppColors.darkPrimary.withValues(alpha: 0.1),
       ),
       floatingActionButtonTheme: FloatingActionButtonThemeData(
         backgroundColor: AppColors.darkPrimary,
@@ -387,7 +387,7 @@ class AppTheme {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(
-            color: AppColors.darkTextSecondary.withOpacity(0.3),
+            color: AppColors.darkTextSecondary.withValues(alpha: 0.3),
             width: 1.5,
           ),
         ),
