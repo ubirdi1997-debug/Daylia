@@ -18,6 +18,7 @@ class _AddEditRoutineScreenState extends State<AddEditRoutineScreen> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _taskController = TextEditingController();
   bool _didLoad = false;
+  bool _isSaving = false;
   List<Task> _tasks = [];
 
   @override
@@ -63,7 +64,10 @@ class _AddEditRoutineScreenState extends State<AddEditRoutineScreen> {
   }
 
   Future<void> _save() async {
+    if (_isSaving) return;
     if (!_formKey.currentState!.validate()) return;
+
+    setState(() => _isSaving = true);
 
     final trimmedName = _nameController.text.trim();
     final orderedTasks = _tasks.asMap().entries.map((entry) {
@@ -72,15 +76,19 @@ class _AddEditRoutineScreenState extends State<AddEditRoutineScreen> {
 
     final provider = context.read<RoutineProvider>();
 
-    if (widget.routineId != null) {
-      final routine = provider.getRoutineById(widget.routineId!);
-      if (routine != null) {
-        await provider.updateRoutine(
-          routine.copyWith(name: trimmedName, tasks: orderedTasks),
-        );
+    try {
+      if (widget.routineId != null) {
+        final routine = provider.getRoutineById(widget.routineId!);
+        if (routine != null) {
+          await provider.updateRoutine(
+            routine.copyWith(name: trimmedName, tasks: orderedTasks),
+          );
+        }
+      } else {
+        await provider.addRoutine(trimmedName, tasks: orderedTasks);
       }
-    } else {
-      await provider.addRoutine(trimmedName, tasks: orderedTasks);
+    } finally {
+      if (mounted) setState(() => _isSaving = false);
     }
 
     if (mounted) Navigator.pop(context);
@@ -96,8 +104,17 @@ class _AddEditRoutineScreenState extends State<AddEditRoutineScreen> {
         title: Text(isEditing ? 'Edit Routine' : 'New Routine'),
         actions: [
           TextButton(
-            onPressed: _save,
-            child: const Text('Save'),
+            onPressed: _isSaving ? null : _save,
+            child: _isSaving
+                ? const SizedBox(
+                    width: 16,
+                    height: 16,
+                    child: Semantics(
+                      label: 'Saving routine',
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    ),
+                  )
+                : const Text('Save'),
           ),
         ],
       ),
